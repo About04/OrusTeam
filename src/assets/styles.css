@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Lexend-Medium";
+    src: url("./fonts/Lexend-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-Thin";
+    src: url("./fonts/Lexend-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-Light";
+    src: url("./fonts/Lexend-Light.ttf");
+}
+
+
+
+body {
+    display: flex;
+    background-color: white;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    display: flex;
+    /* background-color: gray; */
+    margin: 3px;
+}
+
+header {
+    align-items: center;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.5)),
+        linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.5)),
+        url("../assets/dbe-icon.png");
+    flex: 1 1 100vw;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: 0px 0px 100px 0px;
+}
+
+nav {
+    flex: 1 1 200px;
+}
+
+main {
+    flex: 20 1 500px;
+}
+
+aside {
+    flex: 1 1 200px;
+}
+
+footer {
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+
+
+#banner-title {
+    color: white;
+    font-family: "Lexend-Medium";
+    font-size: 60px;
+    text-shadow: 1px 1px 10px black;
+}
+
+#banner-description {
+    color: white;
+    font-family: "Lexend-Thin";
+    font-size: 18px;
+}
+
+#post {
+    flex: 1 1 100vw;
+}
+
+#post-title {
+    color: black;
+    font-family: "Lexend-Medium";
+    font-size: 60px;
+    text-align: center;
+}
+
+#post-description {
+    color: black;
+    text-align: justify;
+    font-family: "Lexend-Light";
+    font-size: 28px;
+}
+
+#download-button {
+    border-radius: 10px;
+    flex: 1 1 100vw;
+    height: 50px;
+    width: 150px;
+}
+
+/* #content-list {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    box-shadow: 5px 5px rgba(1, 1, 1, 0.4);
+}
+
+
+#content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#content img:hover {
+    transform: scale(110%);
+}
+
+#content-title {
+    text-align: center;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+} */
