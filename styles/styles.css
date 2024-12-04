@@ -1,30 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: "Lexend-Medium";
-    src: url("./fonts/Lexend-Medium.ttf");
-}
-
-@font-face {
-    font-family: "Lexend-Thin";
-    src: url("./fonts/Lexend-Thin.ttf");
-}
-
-@font-face {
-    font-family: "Lexend-Light";
-    src: url("./fonts/Lexend-Light.ttf");
-}
-
-
-
 body {
     display: flex;
     background-color: white;
-    flex: 1 1 100vw;
     flex-wrap: wrap;
     overflow: auto;
 }
@@ -35,21 +11,22 @@ main,
 aside,
 footer {
     display: flex;
-    /* background-color: gray; */
+    background-color: rgb(231, 231, 231);
     margin: 3px;
 }
 
 header {
     align-items: center;
     background-image:
-        linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.5)),
-        linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.5)),
+        /* linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.8)),
+        linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.8)), */
+        linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.8)),
         url("../assets/dbe-icon.png");
     flex: 1 1 100vw;
     flex-direction: column;
-    height: 100vh;
+    height: 60vh;
     justify-content: center;
-    margin: 0px 0px 100px 0px;
+    margin: 0 0 100px 0;
 }
 
 nav {
@@ -65,8 +42,10 @@ aside {
 }
 
 footer {
+    background-color: #332E2B;
     flex: 1 1 100vw;
-    height: 100px;
+    height: 350px;
+    margin: 100px 0 0 0;
 }
 
 
@@ -74,40 +53,17 @@ footer {
 #banner-title {
     color: white;
     font-family: "Lexend-Medium";
-    font-size: 60px;
-    text-shadow: 1px 1px 10px black;
+    font-size: 50px;
+    text-align: center;
 }
 
 #banner-description {
     color: white;
     font-family: "Lexend-Thin";
     font-size: 18px;
-}
-
-#post {
-    flex: 1 1 100vw;
-}
-
-#post-title {
-    color: black;
-    font-family: "Lexend-Medium";
-    font-size: 60px;
     text-align: center;
 }
 
-#post-description {
-    color: black;
-    text-align: justify;
-    font-family: "Lexend-Light";
-    font-size: 28px;
-}
-
-#download-button {
-    border-radius: 10px;
-    flex: 1 1 100vw;
-    height: 50px;
-    width: 150px;
-}
 
 /* #content-list {
     display: grid;
