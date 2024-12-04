@@ -6,6 +6,10 @@ const posts = new Map();
 
 
 
+
+document.body.style.maxWidth = `2px`
+
+
 posts.set("", {
     title: "Patch 4.0",
     postContent: [
