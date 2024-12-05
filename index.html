@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-adsense-account" content="ca-pub-4837109912697569">
+
+    <title>OrusTeam</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/post-style.css" />
     <link rel="stylesheet" href="styles/styles.css" />
@@ -13,67 +17,57 @@
             padding: 0;
         }
     </style>
-    <link rel="icon" href="./assets/favicon.png" type="image/png">
-    <title>OrusTeam</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4837109912697569"
-        crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-4837109912697569">
 </head>
 
 <body>
     <header>
-        <ul id="header-menu">
-            <a href="#">
+        <ul id="headerMenu">
+            <a href="./wiki">
                 <li>Contato</li>
             </a>
-            <a id="discord-button" href="https://discord.com/invite/Q265Bv7fvc">
+            <a id="discordButton" href="https://discord.com/invite/Q265Bv7fvc">
                 <li>Entrar no Discord</li>
             </a>
         </ul>
-        <h1 id="banner-title">The <span>Dragon Ball</span> Add-on</h1>
-        <h1 id="banner-description">Desperte o seu poder interior, supere desafios incríveis e enfrente inimigos
+        <h1 id="bannerTitle">The <span>Dragon Ball</span> Add-on</h1>
+        <h1 id="bannerDescription">Desperte o seu poder interior, supere desafios incríveis e enfrente inimigos
             temíveis do universo de Dragon Ball</h1>
     </header>
     <nav></nav>
     <main>
-        <div id="post">
-            <h1 id="post-title">Patch 4.0</h1>
-            <p id="post-description">Depois de muito tempo, a nova versão do Dragon Ball Evolution (DBE) finalmente
+        <div class="post">
+            <h1 class="postTitle">Patch 4.0</h1>
+            <p class="postDescription">Depois de muito tempo, a nova versão do Dragon Ball Evolution (DBE) finalmente
                 chegou! Essa atualização tão aguardada reformula completamente o addon, trazendo novas estruturas,
                 transformações incríveis, visuais melhorados e sistemas inéditos, como combate reformulado e interações
                 únicas com NPCs. O mundo foi renovado, com locais lendários cheios de desafios e segredos. Suas escolhas
                 entre o bem e o mal moldarão sua jornada. Está pronto para explorar esse universo e se tornar o mais
                 forte?</p>
-            <img id="post-banner" src="./assets/dbe-icon.png">
-            <p id="post-description">Novidades:<br>- Adicionado sistema de masterização<br>- Adicionado atributos
+            <img class="postBanner" src="./assets/dbe-icon.png">
+            <p class="postDescription">Novidades:<br>- Adicionado sistema de masterização<br>- Adicionado atributos
                 infinitos</p>
-            <div class="container">
-                <button id="download-button">Baixar</button>
-            </div>
         </div>
-        <!-- <div id="content-list"></div>
-        <script src="./index.js"></script> -->
 
-        <table id="version-list">
-            <tr>
-                <th>Nome</th>
-                <th>Versão do jogo</th>
-                <th>Baixar</th>
-            </tr>
-            <tr>
-                <td>Dragon Evolution v3.0.0</td>
-                <td id="game-version">1.18.40</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Dragon Evolution v4.0.0</td>
-                <div id="game-version">
-                    <td>1.21.40</td>
-                </div>
-                <td><a href="./assets/background.png" download="">Baixar</a></td>
-            </tr>
-        </table>
-
+        <div class="versionList">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Versão do jogo</th>
+                    <th>Baixar</th>
+                </tr>
+                <tr>
+                    <td>Dragon Evolution v3.0.0</td>
+                    <td class="gameVersion">Minecraft Bedrock 1.18.40</td>
+                    <td><a href="#" download="">Baixar</a></td>
+                </tr>
+                <tr>
+                    <td>Dragon Evolution v4.0.0</td>
+                    <td class="gameVersion">Minecraft Bedrock 1.21.40</td>
+                    <td><a class="downloadArrowDown" href="#" download=""><img
+                                src="./assets/icons/download_arrow_down_icon.png"></a></td>
+                </tr>
+            </table>
+        </div>
     </main>
     <aside></aside>
     <footer></footer>
